@@ -4,7 +4,7 @@ package com.maxenglander.examples.model;
  *
  * @author maxenglander
  */
-public class TrackV2 extends TrackV1 implements Track {
+public class TrackV2 extends TrackV1 {
     private final int lengthInSeconds;
     
     public TrackV2(String artistName, String title, int length) {        
@@ -15,9 +15,5 @@ public class TrackV2 extends TrackV1 implements Track {
     @Override
     public Object getLength() {
         return lengthInSeconds;
-    }
-    
-    public Object getLengthInMinutesAndSeconds() {
-        return super.getLength();
-    }
+    }   
 }

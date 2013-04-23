@@ -4,7 +4,7 @@ package com.maxenglander.examples.model;
  *
  * @author maxenglander
  */
-public class TrackV1 implements Track {
+public class TrackV1 {
     private final String artistName;
     private final String length;
     private final String title;
