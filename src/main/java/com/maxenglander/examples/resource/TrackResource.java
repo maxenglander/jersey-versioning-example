@@ -19,13 +19,13 @@ public class TrackResource {
     @Path("/{id}")
     @Produces("application/vnd.musicstore-v1+json")    
     public TrackV1 getV1(@PathParam("id") int id) {        
-        return new TrackV1("Woodie Guthrie", "Jackhammer Blues", "2:30");
+        return new TrackV1("Woodie Guthrie", "Jackhammer Blues", "2:30", 1941);
     }
     
     @GET
     @Path("/{id}")
     @Produces("application/vnd.musicstore-v2+json")
     public TrackV2 getV2(@PathParam("id") int id) {
-        return new TrackV2("Woodie Guthrie", "Jackhammer Blues", 150);        
+        return new TrackV2("Woodie Guthrie", "Jackhammer Blues", 150, 1941);
     }
 }
