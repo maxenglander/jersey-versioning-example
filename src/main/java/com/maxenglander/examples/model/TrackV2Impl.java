@@ -7,10 +7,10 @@ import org.codehaus.jackson.annotate.JsonProperty;
  *
  * @author maxenglander
  */
-public class TrackV2 extends TrackV1 {
+public class TrackV2Impl extends TrackV1Impl {
     private final int lengthInSeconds;
     
-    public TrackV2(String artistName, String title, int length, int year) {        
+    public TrackV2Impl(String artistName, String title, int length, int year) {        
         super(artistName, title, (length / 60) + ":" + (length % 60), year);
         this.lengthInSeconds = length;
     }

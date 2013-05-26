@@ -1,18 +1,16 @@
 package com.maxenglander.examples.model;
 
-import org.codehaus.jackson.annotate.JsonIgnore;
-
 /**
  *
  * @author maxenglander
  */
-public class TrackV1 {
+public class TrackV1Impl implements Track {
     private final String artistName;
     private final String length;
     private final String title;
     private final int year;
     
-    public TrackV1(String artistName, String title, String length, int year) {
+    public TrackV1Impl(String artistName, String title, String length, int year) {
         this.artistName = artistName;
         this.length = length;
         this.title = title;
